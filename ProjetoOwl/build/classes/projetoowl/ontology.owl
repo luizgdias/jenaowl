@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#eCompativelCom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#eCompativelCom"/>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#possuiFonte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#possuiFonte"/>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#possuiStep -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#possuiStep"/>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#possuiSumidouro -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#possuiSumidouro"/>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#possuiTarefa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#possuiTarefa"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Experimento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Experimento"/>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Step -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Step">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Workflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Step"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Workflow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Workflow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Experimento"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Task"/>
+        <possuiFonte rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade1"/>
+        <possuiSumidouro rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade3"/>
+        <possuiSumidouro rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Task"/>
+        <possuiFonte rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade2"/>
+        <possuiSumidouro rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Task"/>
+        <possuiFonte rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade1"/>
+        <possuiSumidouro rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Task"/>
+        <possuiFonte rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade1"/>
+        <possuiSumidouro rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Task"/>
+        <possuiFonte rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade2"/>
+        <possuiSumidouro rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Task"/>
+        <possuiFonte rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade3"/>
+        <possuiFonte rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade4"/>
+        <possuiSumidouro rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Task"/>
+        <possuiFonte rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade5"/>
+        <possuiSumidouro rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Task"/>
+        <possuiFonte rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade7"/>
+        <possuiSumidouro rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Step"/>
+        <possuiFonte rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaA"/>
+        <possuiSumidouro rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaB"/>
+        <possuiTarefa rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade1"/>
+        <possuiTarefa rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Step"/>
+        <possuiFonte rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaA"/>
+        <possuiSumidouro rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaC"/>
+        <possuiTarefa rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade3"/>
+        <possuiTarefa rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade4"/>
+        <possuiTarefa rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Step"/>
+        <possuiFonte rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaB"/>
+        <possuiSumidouro rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaC"/>
+        <possuiSumidouro rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaD"/>
+        <possuiTarefa rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade6"/>
+        <possuiTarefa rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#atividade7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Step"/>
+        <possuiFonte rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaC"/>
+        <possuiSumidouro rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#experimento1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#experimento1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Experimento"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#experimeto2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#experimeto2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Experimento"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#workflow1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#workflow1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Workflow"/>
+        <possuiFonte rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaA"/>
+        <possuiStep rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaA"/>
+        <possuiStep rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaB"/>
+        <possuiStep rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaC"/>
+        <possuiSumidouro rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#workflow2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#workflow2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Workflow"/>
+        <possuiFonte rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaA"/>
+        <possuiStep rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaA"/>
+        <possuiStep rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaB"/>
+        <possuiStep rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaC"/>
+        <possuiSumidouro rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#workflow3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#workflow3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#Workflow"/>
+        <possuiFonte rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaA"/>
+        <possuiStep rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaA"/>
+        <possuiStep rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaB"/>
+        <possuiStep rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaC"/>
+        <possuiStep rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaD"/>
+        <possuiSumidouro rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#etapaD"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
