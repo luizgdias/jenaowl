@@ -5,8 +5,13 @@
  */
 package projetoowl;
 
+import java.util.Iterator;
 import javax.management.Query;
 import static org.apache.jena.enhanced.BuiltinPersonalities.model;
+import org.apache.jena.ontology.Individual;
+import org.apache.jena.ontology.OntClass;
+import org.apache.jena.ontology.OntModel;
+import org.apache.jena.ontology.OntProperty;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QueryFactory;
@@ -36,6 +41,7 @@ public class ProjetoOwl {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        String diretorio = "/home/luizgustavo/ontology.owl";
         FileManager.get().addLocatorClassLoader(ProjetoOwl.class.getClassLoader());
         Model data = FileManager.get().loadModel("file:/home/luizgustavo/ontology.owl");
         Model schema = FileManager.get().loadModel("https://www.w3.org/2000/01/rdf-schema");
@@ -43,31 +49,80 @@ public class ProjetoOwl {
         
         Reasoner reasoner = ReasonerRegistry.getOWLReasoner();
         reasoner = reasoner.bindSchema(schema);
-        InfModel infmodel = ModelFactory.createInfModel(reasoner, data);
-               
-        String objeto = "", objeto1 = "workflow";
         
+        InfModel infmodel = ModelFactory.createInfModel(reasoner, data);
+        Resource ontologia = infmodel.getResource("http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#");
+        //showAllAboutWorkflow(infmodel, ontologia, null, null);
+        //showInfoAboutSpecificWorkflow(infmodel, ontologia, diretorio, "atividade1");
+        listRelationsAndIndividuals(infmodel, ontologia, diretorio, "workflow3");
+    }   
+
+    private static void showAllAboutWorkflow(InfModel infmodel, Resource ontologia, Property p, Resource o) {
+        String objeto, objeto1 = "workflow";
+        String link;
         
         for (int i = 1; i < 4; i++) {
             objeto = objeto1+""+i;
             System.out.println("\n** Data about "+objeto+" **");
-
-            Resource entidade = infmodel.getResource("http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#"+objeto);
-            System.out.println(objeto+" *:");
-            showWorkflowsSteps(infmodel, entidade, null, null);
+            link = ontologia+objeto;
+            Resource entidade = infmodel.getResource(link);
+            
+            for (StmtIterator j = infmodel.listStatements(entidade, p, o); j.hasNext(); ) {
+                Statement stmt = j.nextStatement();
+                System.out.println("\n - " + PrintUtil.print(stmt));
+                //System.out.println("\n : " + stmt.getObject());
+                System.out.println("\n asdasd: " + stmt.getClass());
+            }           
+        }   
+    }
+    private static void showInfoAboutSpecificWorkflow(InfModel modelo, Resource ontologia, String diretorio, String instancia) {
+        System.out.println("**Inferencia**");
+        //System.out.println(diretorio);
+        OntModel base = ModelFactory.createOntologyModel();
+        base.read(diretorio, "OWL/XML");
+        
+        
+        String url = "http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#";
+        OntClass classeInstancia = base.getOntClass(url + instancia);
+        Individual individuo = base.createIndividual(url + instancia, classeInstancia);
+        
+        for (Iterator<Resource> i = individuo.listRDFTypes(true); i.hasNext();) {
+            System.out.print("\nInstância: "+ individuo.getLocalName()+ "\nfaz parte da classe \n" + i.next().getLocalName() + "\n");
+            
+            //System.out.print("\n "+ workflow3.getURI() + "\n faz parte da classe \n" + i.next() + "\n");
         }
         
-    }   
-
-    private static void showWorkflowsSteps(InfModel infmodel, Resource s, Property p, Resource o) {
         
-        for (StmtIterator i = infmodel.listStatements(s, p, o); i.hasNext(); ) {
-            Statement stmt = i.nextStatement();
-            System.out.println("\n - " + PrintUtil.print(stmt));
-            //System.out.println("\n : " + stmt.getObject());
-        }
+        
         
     }
 
-    
+    private static void listRelationsAndIndividuals(InfModel infmodel, Resource ontologia, String diretorio, String instancia) {
+        OntModel base = ModelFactory.createOntologyModel();
+        base.read(diretorio, "OWL/XML");
+        
+        
+        String url = "http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#";
+        OntClass classeInstancia = base.getOntClass(url + instancia);
+        OntProperty propriedadeInstancia =  base.getOntProperty(url+instancia);
+        Individual individuo = base.createIndividual(url + instancia, classeInstancia);
+        OntProperty prop = base.getOntProperty( url + "Workflow" );
+        
+                
+        
+        System.out.println("**Relations and Individuals**");
+        System.out.println("*Instancia*: "+ individuo.getLocalName());
+        
+         for (StmtIterator j = individuo.listProperties(); j.hasNext(); ) {
+                    Statement s = j.next();
+                    System.out.print( "    " + s.getPredicate().getLocalName() + " -> " );
+
+                    if (s.getObject().isLiteral()) {
+                        System.out.println( s.getLiteral().getLexicalForm() );
+                    }
+                    else {
+                        System.out.println( s.getObject() );
+                    }
+        }   
+    }
 }
