@@ -37,24 +37,29 @@ import org.apache.jena.util.PrintUtil;
  */
 public class ProjetoOwl {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        String diretorio = "/home/luizgustavo/ontology.owl";
+        String diretorio = "/home/luizgustavo/NetBeansProjects/ProjetoOwl/src/projetoowl/ontology2.owl";
         FileManager.get().addLocatorClassLoader(ProjetoOwl.class.getClassLoader());
-        Model data = FileManager.get().loadModel("file:/home/luizgustavo/ontology.owl");
-        Model schema = FileManager.get().loadModel("https://www.w3.org/2000/01/rdf-schema");
-        //model.write(System.out, "TURTLE");     
+        Model data = FileManager.get().loadModel("file:/home/luizgustavo/NetBeansProjects/ProjetoOwl/src/projetoowl/ontology.owl");
+        Model schema = FileManager.get().loadModel("https://www.w3.org/2000/01/rdf-schema"); 
         
         Reasoner reasoner = ReasonerRegistry.getOWLReasoner();
         reasoner = reasoner.bindSchema(schema);
         
         InfModel infmodel = ModelFactory.createInfModel(reasoner, data);
         Resource ontologia = infmodel.getResource("http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#");
+        
+        /* Funções executáveis:
+        * showAllAboutWorkflow: Lista todas as informações sobre a ontologia
+        * showInfoAboutSpecificWorkflow: Lista a classe de uma instância específica
+        * listRelationsAndIndividuals: Lista os relacionamentos de uma entidade específica
+        */ 
+        
+        
         //showAllAboutWorkflow(infmodel, ontologia, null, null);
         //showInfoAboutSpecificWorkflow(infmodel, ontologia, diretorio, "atividade1");
-        listRelationsAndIndividuals(infmodel, ontologia, diretorio, "workflow3");
+        listRelationsAndIndividuals(infmodel, ontologia, diretorio, "experimento1");
+        listEquivalentWorkflows(infmodel, diretorio, "experimento1");
     }   
 
     private static void showAllAboutWorkflow(InfModel infmodel, Resource ontologia, Property p, Resource o) {
@@ -96,7 +101,6 @@ public class ProjetoOwl {
         
         
     }
-
     private static void listRelationsAndIndividuals(InfModel infmodel, Resource ontologia, String diretorio, String instancia) {
         OntModel base = ModelFactory.createOntologyModel();
         base.read(diretorio, "OWL/XML");
@@ -104,11 +108,8 @@ public class ProjetoOwl {
         
         String url = "http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#";
         OntClass classeInstancia = base.getOntClass(url + instancia);
-        OntProperty propriedadeInstancia =  base.getOntProperty(url+instancia);
         Individual individuo = base.createIndividual(url + instancia, classeInstancia);
-        OntProperty prop = base.getOntProperty( url + "Workflow" );
-        
-                
+       
         
         System.out.println("**Relations and Individuals**");
         System.out.println("*Instancia*: "+ individuo.getLocalName());
@@ -124,5 +125,22 @@ public class ProjetoOwl {
                         System.out.println( s.getObject() );
                     }
         }   
+    }
+    private static void listEquivalentWorkflows(InfModel infmodel, String diretorio, String experimento) {
+        System.out.println("**Inferencia**");
+        //System.out.println(diretorio);
+        OntModel base = ModelFactory.createOntologyModel();
+        base.read(diretorio, "OWL/XML");
+        
+        
+        String url = "http://www.semanticweb.org/luizgustavo/ontologies/2019/0/untitled-ontology-2#";
+        OntClass classeInstancia = base.getOntClass(url + experimento);
+        Individual individuo = base.createIndividual(url + experimento, classeInstancia);
+        
+        for (Iterator<Resource> i = individuo.listRDFTypes(true); i.hasNext();) {
+            System.out.print("\nInstância: "+ individuo.getLocalName()+ "\nfaz parte da classe \n" + i.next().getLocalName() + "\n");
+            
+            //System.out.print("\n "+ workflow3.getURI() + "\n faz parte da classe \n" + i.next() + "\n");
+        }
     }
 }
