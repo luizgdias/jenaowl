@@ -1,0 +1,691 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17">
+    <Prefix name="" IRI="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Attribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_transformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dataset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Task"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#actedOnBehalfOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#used"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasAttributedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasEndedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasInformedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasStartedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#attr_a1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#attr_a2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#attr_a3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#attr_b1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#attr_b2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#attr_c1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#attr_c2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#attr_k"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#attr_x"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#attr_y"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#attr_z"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ds_a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ds_idt_a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ds_idt_b"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ds_idt_b1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ds_idt_b2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ds_idt_c"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ds_idt_d"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ds_idt_e"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ds_idt_merge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ds_odt_a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ds_odt_b"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ds_odt_b1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ds_odt_b2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ds_odt_c"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ds_odt_d"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ds_odt_e"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ds_odt_merge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ds_z"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dt_a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dt_b"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dt_b1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dt_b2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dt_c"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dt_d"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dt_e"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dt_merge"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#attr_a1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#attr_a2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#attr_a3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#attr_b1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#attr_b2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#attr_c1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#attr_c2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#attr_k"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#attr_x"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#attr_y"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#attr_z"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#ds_idt_a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#ds_idt_b"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#ds_idt_b1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#ds_idt_b2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#ds_idt_c"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#ds_idt_d"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#ds_idt_e"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#ds_idt_merge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#ds_odt_a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#ds_odt_b"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#ds_odt_b1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#ds_odt_b2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#ds_odt_c"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#ds_odt_d"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#ds_odt_e"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#ds_odt_merge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_transformation"/>
+        <NamedIndividual IRI="#dt_a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_transformation"/>
+        <NamedIndividual IRI="#dt_b"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_transformation"/>
+        <NamedIndividual IRI="#dt_b1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_transformation"/>
+        <NamedIndividual IRI="#dt_b2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_transformation"/>
+        <NamedIndividual IRI="#dt_c"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_transformation"/>
+        <NamedIndividual IRI="#dt_d"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_transformation"/>
+        <NamedIndividual IRI="#dt_e"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_transformation"/>
+        <NamedIndividual IRI="#dt_merge"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#ds_idt_b"/>
+        <NamedIndividual IRI="#ds_odt_a"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#ds_idt_b1"/>
+        <NamedIndividual IRI="#ds_odt_a"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#ds_idt_c"/>
+        <NamedIndividual IRI="#ds_odt_b"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#ds_idt_c"/>
+        <NamedIndividual IRI="#ds_odt_merge"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#ds_idt_d"/>
+        <NamedIndividual IRI="#ds_odt_b"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#ds_idt_e"/>
+        <NamedIndividual IRI="#ds_odt_c"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#ds_idt_merge"/>
+        <NamedIndividual IRI="#ds_odt_b1"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#ds_idt_merge"/>
+        <NamedIndividual IRI="#ds_odt_b2"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#dt_c"/>
+        <NamedIndividual IRI="#dt_d"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#attr_a1"/>
+        <NamedIndividual IRI="#dt_a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#attr_a1"/>
+        <NamedIndividual IRI="#dt_a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#attr_a2"/>
+        <NamedIndividual IRI="#dt_a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#attr_a2"/>
+        <NamedIndividual IRI="#dt_a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#attr_a3"/>
+        <NamedIndividual IRI="#dt_a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#attr_a3"/>
+        <NamedIndividual IRI="#dt_a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#attr_b1"/>
+        <NamedIndividual IRI="#ds_odt_b"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#attr_b1"/>
+        <NamedIndividual IRI="#ds_odt_b1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#attr_b1"/>
+        <NamedIndividual IRI="#dt_b"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#attr_b1"/>
+        <NamedIndividual IRI="#dt_b1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#attr_b2"/>
+        <NamedIndividual IRI="#ds_odt_b"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#attr_b2"/>
+        <NamedIndividual IRI="#ds_odt_b2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#attr_b2"/>
+        <NamedIndividual IRI="#dt_b"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#attr_b2"/>
+        <NamedIndividual IRI="#dt_b2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#attr_c1"/>
+        <NamedIndividual IRI="#ds_odt_c"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#attr_c1"/>
+        <NamedIndividual IRI="#dt_c"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#attr_c2"/>
+        <NamedIndividual IRI="#ds_odt_c"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#attr_c2"/>
+        <NamedIndividual IRI="#dt_c"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#ds_idt_a"/>
+        <NamedIndividual IRI="#attr_a1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#ds_idt_a"/>
+        <NamedIndividual IRI="#attr_a2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#ds_idt_a"/>
+        <NamedIndividual IRI="#attr_a3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#ds_idt_b"/>
+        <NamedIndividual IRI="#dt_a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#ds_idt_b1"/>
+        <NamedIndividual IRI="#dt_a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#ds_idt_b2"/>
+        <NamedIndividual IRI="#dt_a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#ds_idt_c"/>
+        <NamedIndividual IRI="#dt_b"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#ds_idt_d"/>
+        <NamedIndividual IRI="#dt_b"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#ds_idt_e"/>
+        <NamedIndividual IRI="#dt_c"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#ds_idt_merge"/>
+        <NamedIndividual IRI="#dt_b1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#ds_idt_merge"/>
+        <NamedIndividual IRI="#dt_b2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#ds_odt_b"/>
+        <NamedIndividual IRI="#dt_b"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#ds_odt_b1"/>
+        <NamedIndividual IRI="#dt_b1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#ds_odt_b2"/>
+        <NamedIndividual IRI="#dt_b2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#ds_odt_c"/>
+        <NamedIndividual IRI="#dt_c"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#ds_odt_d"/>
+        <NamedIndividual IRI="#dt_d"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#ds_odt_e"/>
+        <NamedIndividual IRI="#dt_e"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#ds_odt_merge"/>
+        <NamedIndividual IRI="#dt_merge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_a"/>
+        <NamedIndividual IRI="#attr_k"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_a"/>
+        <NamedIndividual IRI="#attr_x"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_a"/>
+        <NamedIndividual IRI="#attr_y"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_a"/>
+        <NamedIndividual IRI="#attr_z"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_b"/>
+        <NamedIndividual IRI="#attr_a1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_b"/>
+        <NamedIndividual IRI="#attr_a2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_b"/>
+        <NamedIndividual IRI="#attr_a3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasInformedBy"/>
+        <NamedIndividual IRI="#dt_b"/>
+        <NamedIndividual IRI="#dt_a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_b1"/>
+        <NamedIndividual IRI="#attr_a1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_b1"/>
+        <NamedIndividual IRI="#attr_a2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasInformedBy"/>
+        <NamedIndividual IRI="#dt_b1"/>
+        <NamedIndividual IRI="#dt_a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_b2"/>
+        <NamedIndividual IRI="#attr_a1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_b2"/>
+        <NamedIndividual IRI="#attr_a3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasInformedBy"/>
+        <NamedIndividual IRI="#dt_b2"/>
+        <NamedIndividual IRI="#dt_a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_c"/>
+        <NamedIndividual IRI="#attr_a1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_c"/>
+        <NamedIndividual IRI="#attr_b1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_c"/>
+        <NamedIndividual IRI="#attr_b2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasInformedBy"/>
+        <NamedIndividual IRI="#dt_c"/>
+        <NamedIndividual IRI="#dt_b"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasInformedBy"/>
+        <NamedIndividual IRI="#dt_c"/>
+        <NamedIndividual IRI="#dt_merge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_d"/>
+        <NamedIndividual IRI="#attr_a1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_d"/>
+        <NamedIndividual IRI="#attr_b1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_d"/>
+        <NamedIndividual IRI="#attr_b2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasInformedBy"/>
+        <NamedIndividual IRI="#dt_d"/>
+        <NamedIndividual IRI="#dt_b"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_e"/>
+        <NamedIndividual IRI="#attr_a1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_e"/>
+        <NamedIndividual IRI="#attr_b1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_e"/>
+        <NamedIndividual IRI="#attr_c1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_e"/>
+        <NamedIndividual IRI="#attr_c2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasInformedBy"/>
+        <NamedIndividual IRI="#dt_e"/>
+        <NamedIndividual IRI="#dt_c"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_merge"/>
+        <NamedIndividual IRI="#attr_a1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_merge"/>
+        <NamedIndividual IRI="#attr_b1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#dt_merge"/>
+        <NamedIndividual IRI="#attr_b2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasInformedBy"/>
+        <NamedIndividual IRI="#dt_merge"/>
+        <NamedIndividual IRI="#dt_b1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasInformedBy"/>
+        <NamedIndividual IRI="#dt_merge"/>
+        <NamedIndividual IRI="#dt_b2"/>
+    </ObjectPropertyAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
