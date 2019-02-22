@@ -1,0 +1,644 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17"
+     xml:base="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-17="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#actedOnBehalfOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#actedOnBehalfOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#used -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#used"/>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasAssociatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasAssociatedWith"/>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasAttributedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasAttributedTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasDerivedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasDerivedFrom"/>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasEndedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasEndedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasGeneratedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasGeneratedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasInformedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasInformedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasStartedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasStartedBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Agent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Entity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
+        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
+        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
+        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
+        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b"/>
+        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b1"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
+        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b"/>
+        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b2"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_c1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_c1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
+        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_c"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_c"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_c2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_c2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
+        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_c"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_c"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_e1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_e1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
+        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_e"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_e"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_k -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_k">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_x -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_x">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_y -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_y">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_z -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_z">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_a"/>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_a"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_b1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_b1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_a"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_b2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_b2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_c -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_c">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_merge"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_e">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_c"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_c"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_merge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_merge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b1"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b2"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b1"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_c -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_c">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_c"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_d"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_e">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_e"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_merge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_merge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
+        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_merge"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_z -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_z"/>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_k"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_x"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_y"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_z"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a2"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a3"/>
+        <untitled-ontology-17:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a2"/>
+        <untitled-ontology-17:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a3"/>
+        <untitled-ontology-17:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_c -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_c">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_d"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b1"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b2"/>
+        <untitled-ontology-17:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
+        <untitled-ontology-17:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_merge"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b1"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b2"/>
+        <untitled-ontology-17:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_e">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b1"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_c1"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_c2"/>
+        <untitled-ontology-17:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_c"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_merge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_merge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b1"/>
+        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b2"/>
+        <untitled-ontology-17:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b1"/>
+        <untitled-ontology-17:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Task"/>
+        <untitled-ontology-17:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+        <rdfs:seeAlso>https://psutil.readthedocs.io/en/latest/</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Task"/>
+        <untitled-ontology-17:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
+        <untitled-ontology-17:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Task"/>
+        <untitled-ontology-17:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
+        <untitled-ontology-17:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Task"/>
+        <untitled-ontology-17:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_c"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Task"/>
+        <untitled-ontology-17:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_e"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_merge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_merge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Task"/>
+        <untitled-ontology-17:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
+        <untitled-ontology-17:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_merge"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_c1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_c2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_e1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_k"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_x"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_y"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_z"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_c"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_d"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_e"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_merge"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_merge"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
