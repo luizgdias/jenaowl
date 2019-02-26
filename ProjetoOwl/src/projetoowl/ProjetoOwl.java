@@ -49,20 +49,23 @@ public class ProjetoOwl {
         OntModel model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MICRO_RULE_INF);
         model.read("file:/home/luizgustavo/NetBeansProjects/ProjetoOwl/src/projetoowl/ontologyRdfTest.owl", "RDF/XML");
 
-        String termo = "<http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation>";
+        String subject       = "?Data_transformation ";
+        String predicate    = "rdf:type";
+        String object       = "<http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation>";
         //showOntologyComponents(model, "Data_transformation");
-        queryingDataflow(model, termo);
+        queryingDataflow(model, subject, predicate, object);
     }
 
-    private static void queryingDataflow(OntModel model, String termo) {
+    private static void queryingDataflow(OntModel model, String subject, String predicate, String object) {
         String queryString
                 = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "
                 + "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  "
                 + "PREFIX jena: <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#>  "
+                + "PREFIX owl: <https://www.w3.org/2002/07/owl#:>"
                 
-                + "select ?uri "
+                + "select " + subject
                 + "where { "
-                + "?uri rdf:type   "+termo
+                + subject + predicate + object +" ;"
                
                 + "} \n ";
 
@@ -70,11 +73,9 @@ public class ProjetoOwl {
         
         System.out.println("----------------------");
 
-        System.out.println("Termo utilizado: "+termo);
-
-        System.out.println("----------------------");
-
-        System.out.println("Resultado");
+        System.out.println("Subject: "+ subject);
+        System.out.println("Predicate: "+ predicate);
+        System.out.println("Object: "+ object);
 
         System.out.println("----------------------");
 
@@ -87,19 +88,20 @@ public class ProjetoOwl {
 
         // Output query results   
         //showing off the query results about all Data_transformations
-        //ResultSetFormatter.out(System.out, results, query);
+        ResultSetFormatter.out(System.out, results, query);
         
-        ArrayList<String> arlist = new ArrayList<>();
+        ArrayList<String> data_transformations = new ArrayList<>();
         
+        //adding results into list
         while (results.hasNext()) {
-           arlist.add(results.next().toString());
+            //RDFNode temp = results.next().get(queryString);
+           data_transformations.add(results.next().toString());
         }
-        
-        //System.out.println(arlist.size());
-        
-        for (int i = 0; i < arlist.size(); i++) {
-            System.out.println(arlist.get(i));
-            
+       
+        //Printing the javalist to confirm the process
+        System.out.println("Sparql results stored at java list:");
+        for (int i = 0; i < data_transformations.size(); i++) {
+            System.out.println(data_transformations.get(i));  
         }
         
         
@@ -119,7 +121,7 @@ public class ProjetoOwl {
                 System.out.println("    Found instance: " + thisInstance.getLocalName()); //to list the link, change getLocalName for toString
 
                 for (StmtIterator j = thisInstance.listProperties(); j.hasNext();) {
-                    Statement s = j.next();
+                    Statement s = j.next(); //statment = arcs. A statement has three parts: subject predicade object
                     System.out.print("      Found property 1: " + s.getPredicate().getLocalName() + " -> ");
 
                     if (s.getObject().isLiteral()) {
