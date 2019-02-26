@@ -5,9 +5,10 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:jena="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:untitled-ontology-17="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena"/>
     
 
 
@@ -22,57 +23,57 @@
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#actedOnBehalfOf -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#actedOnBehalfOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#actedOnBehalfOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#actedOnBehalfOf"/>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#used -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#used -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#used"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#used"/>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasAssociatedWith -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#wasAssociatedWith -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasAssociatedWith"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#wasAssociatedWith"/>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasAttributedTo -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#wasAttributedTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasAttributedTo"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#wasAttributedTo"/>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasDerivedFrom -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#wasDerivedFrom -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasDerivedFrom"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#wasDerivedFrom"/>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasEndedBy -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#wasEndedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasEndedBy"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#wasEndedBy"/>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasGeneratedBy -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#wasGeneratedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasGeneratedBy"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#wasGeneratedBy"/>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasInformedBy -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#wasInformedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasInformedBy"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#wasInformedBy"/>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasStartedBy -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#wasStartedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#wasStartedBy"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#wasStartedBy"/>
     
 
 
@@ -87,52 +88,52 @@
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Activity -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Activity -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Activity"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Activity"/>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Agent -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Agent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Agent"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Agent"/>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Attribute -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Entity"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Attribute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Entity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Activity"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Activity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Entity"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Entity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Entity -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Entity -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Entity"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Entity"/>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Task -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Task -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Task">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Activity"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Activity"/>
     </owl:Class>
     
 
@@ -148,441 +149,441 @@
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
-        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Attribute"/>
+        <jena:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_a"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_a"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a2 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
-        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Attribute"/>
+        <jena:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_a"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_a"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a3 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a3 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
-        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Attribute"/>
+        <jena:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_a"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_a"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b1 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_b1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
-        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b"/>
-        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b1"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b1"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_b1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Attribute"/>
+        <jena:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_b"/>
+        <jena:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_b1"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b2 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_b2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
-        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b"/>
-        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b2"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b2"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_b2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Attribute"/>
+        <jena:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_b"/>
+        <jena:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_b2"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b2"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_c1 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_c1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_c1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
-        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_c"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_c"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_c1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Attribute"/>
+        <jena:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_c"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_c"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_c2 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_c2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_c2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
-        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_c"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_c"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_c2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Attribute"/>
+        <jena:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_c"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_c"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_e1 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_e1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_e1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
-        <untitled-ontology-17:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_e"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_e"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_e1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Attribute"/>
+        <jena:wasDerivedFrom rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_e"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_e"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_k -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_k -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_k">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_a"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_k">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Attribute"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_a"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_x -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_x -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_x">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_a"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_x">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Attribute"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_a"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_y -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_y -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_y">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_a"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_y">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Attribute"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_a"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_z -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_z -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_z">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Attribute"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_a"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_z">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Attribute"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_a"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_a -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_a -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_a"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_a"/>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_a -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_a -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_a">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_b -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_b -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_b">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
-        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_a"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_a"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_a"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_b1 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_b1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_b1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
-        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_a"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_b1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_a"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_a"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_b2 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_b2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_b2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_b2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_a"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_c -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_c -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_c">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
-        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b"/>
-        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_merge"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_c">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_b"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_merge"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_d -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_d -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_d">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
-        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_b"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_e -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_e -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_e">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
-        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_c"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_c"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_e">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_c"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_c"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_merge -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_merge -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_idt_merge">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
-        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b1"/>
-        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b2"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b1"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b2"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_idt_merge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_b1"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_b2"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b1"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b2"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_a -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_a -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_a">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_b -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b1 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_b1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b1"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_b1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b2 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_b2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_b2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b2"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_b2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b2"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_c -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_c -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_c">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_c"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_c">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_c"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_d -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_d -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_d">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_d"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_d"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_e -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_e -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_e">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_e"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_e">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_e"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_merge -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_merge -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_odt_merge">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Dataset"/>
-        <untitled-ontology-17:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_merge"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_odt_merge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset"/>
+        <jena:wasGeneratedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_merge"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_z -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_z -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#ds_z"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#ds_z"/>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_a -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_k"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_x"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_y"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_z"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_k"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_x"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_y"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_z"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a2"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a3"/>
-        <untitled-ontology-17:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a1"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a2"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a3"/>
+        <jena:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_a"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b1 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a2"/>
-        <untitled-ontology-17:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a1"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a2"/>
+        <jena:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_a"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b2 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a3"/>
-        <untitled-ontology-17:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a1"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a3"/>
+        <jena:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_a"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_c -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_c -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_c">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation"/>
-        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_d"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b1"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b2"/>
-        <untitled-ontology-17:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
-        <untitled-ontology-17:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_merge"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_c">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_d"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a1"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_b1"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_b2"/>
+        <jena:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b"/>
+        <jena:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_merge"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_d -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_d -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_d">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b1"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b2"/>
-        <untitled-ontology-17:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a1"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_b1"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_b2"/>
+        <jena:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_e -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_e -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_e">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b1"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_c1"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_c2"/>
-        <untitled-ontology-17:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_c"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_e">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a1"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_b1"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_c1"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_c2"/>
+        <jena:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_c"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_merge -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_merge -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_merge">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Data_transformation"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b1"/>
-        <untitled-ontology-17:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b2"/>
-        <untitled-ontology-17:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b1"/>
-        <untitled-ontology-17:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b2"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_merge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a1"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_b1"/>
+        <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_b2"/>
+        <jena:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b1"/>
+        <jena:wasInformedBy rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b2"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_1 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#task_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Task"/>
-        <untitled-ontology-17:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#task_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Task"/>
+        <jena:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_a"/>
         <rdfs:seeAlso>https://psutil.readthedocs.io/en/latest/</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_2 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#task_2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Task"/>
-        <untitled-ontology-17:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
-        <untitled-ontology-17:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b1"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#task_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Task"/>
+        <jena:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b"/>
+        <jena:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_3 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#task_3 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Task"/>
-        <untitled-ontology-17:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
-        <untitled-ontology-17:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b2"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#task_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Task"/>
+        <jena:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b"/>
+        <jena:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b2"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_4 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#task_4 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_4">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Task"/>
-        <untitled-ontology-17:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_c"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#task_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Task"/>
+        <jena:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_c"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_5 -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#task_5 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Task"/>
-        <untitled-ontology-17:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_e"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#task_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Task"/>
+        <jena:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_e"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_merge -->
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#task_merge -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_merge">
-        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#Task"/>
-        <untitled-ontology-17:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
-        <untitled-ontology-17:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_merge"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#task_merge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Task"/>
+        <jena:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b"/>
+        <jena:wasAssociatedWith rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_merge"/>
     </owl:NamedIndividual>
     
 
@@ -598,42 +599,42 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a1"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a2"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_a3"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b1"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_b2"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_c1"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_c2"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_e1"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_k"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_x"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_y"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#attr_z"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_b1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_b2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_c1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_c2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_e1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_k"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_x"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_y"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_z"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_a"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b1"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_b2"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_c"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_d"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_e"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#dt_merge"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_a"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_b2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_c"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_d"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_e"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_merge"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_1"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_2"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_3"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_4"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_5"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/untitled-ontology-17#task_merge"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#task_1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#task_2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#task_3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#task_4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#task_5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#task_merge"/>
         </owl:distinctMembers>
     </rdf:Description>
 </rdf:RDF>
