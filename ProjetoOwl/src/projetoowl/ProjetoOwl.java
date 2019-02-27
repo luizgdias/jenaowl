@@ -93,7 +93,7 @@ public class ProjetoOwl {
                 + "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  "
                 + "PREFIX jena: <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#>  "
                 + "PREFIX owl: <https://www.w3.org/2002/07/owl#:>"
-                + "select " + subject  
+                + "select " + subject
                 + "where { "
                 + subject + predicate + object + " ; "
                 + " } "
@@ -108,12 +108,11 @@ public class ProjetoOwl {
         System.out.println("Subject: " + subject);
         System.out.println("Predicate: " + predicate);
         System.out.println("Object: " + object);
-
         System.out.println("----------------------");
 
         QueryExecution qe = QueryExecutionFactory.create(query, model);
         ResultSet results = qe.execSelect();
-        
+
         // Output query results   
         //showing off the query results about all Data_transformations
         //ResultSetFormatter.out(System.out, results, query);
@@ -122,22 +121,48 @@ public class ProjetoOwl {
         //adding results into list
         while (results.hasNext()) {
             //taking just the uri and add into java list
-            //the result set store ( ?NamedIndividual = <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_merge> ) into list
-            String temp = results. next().toString();
-            String content = temp.substring(temp.indexOf("= ")+1, temp.indexOf(" )"));
+            //the resultset store: ( ?NamedIndividual = <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_merge> ) into list
+            String temp = results.next().toString();
+            String content = temp.substring(temp.indexOf("= ") + 2, temp.indexOf(" )"));
             data_transformations.add(content);
         }
-        
-        //boolean blnFound = data_transformations.contains("( ?x = <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_merge> )");
-        //System.out.println("Does arrayList contain jena:dt_merge ? " + blnFound);
+
+        boolean blnFound = data_transformations.contains("<http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_merge>");
+        System.out.println("Does arrayList contain jena:dt_merge ? " + blnFound);
 
         //Printing the javalist to confirm the process
         System.out.println("Sparql results - java list:");
         for (int i = 0; i < data_transformations.size(); i++) {
             //System.out.println(data_transformations.get(i).substring(data_transformations.get(i).indexOf("= ")+1, data_transformations.get(i).indexOf(" )")));
-           System.out.println(data_transformations.get(i));         
+            System.out.println(data_transformations.get(i));
         }
 
+        for (int j = 0; j < data_transformations.size(); j++) {
+            System.out.println("------" + j);
+            String subject2 = " ?dt_exists ";
+            String predicate2 = "jena:same";
+            String object2 = " "+data_transformations.get(j) + " ";
+
+            System.out.println("Subject2 i: " + j + " " + subject2);
+            System.out.println("Object j: " + j + " " + object2);
+
+            String queryString2
+                    = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "
+                    + "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  "
+                    + "PREFIX jena: <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#>  "
+                    + "PREFIX owl: <https://www.w3.org/2002/07/owl#:>"
+                    + "select " + subject2
+                    + "where { "
+                    + subject2 + predicate2 + object2 + " ; "
+                    + " } "
+                    + "ORDER BY DESC(" + subject2 + ")\n"
+                    + "LIMIT 10 \n ";
+
+            org.apache.jena.query.Query query2 = QueryFactory.create(queryString2);
+            QueryExecution qe2 = QueryExecutionFactory.create(query2, model);
+            ResultSet results2 = qe2.execSelect();
+            ResultSetFormatter.out(System.out, results2, query2);
+        }
     }
 
     private static void showOntologyComponents(OntModel model, String termo) {
