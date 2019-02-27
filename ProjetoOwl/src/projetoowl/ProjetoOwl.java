@@ -7,6 +7,7 @@ package projetoowl;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Properties;
 import javax.management.Query;
 import static org.apache.jena.enhanced.BuiltinPersonalities.model;
@@ -22,6 +23,7 @@ import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.query.ResultSetFormatter;
 import org.apache.jena.rdf.model.InfModel;
+import org.apache.jena.rdf.model.Literal;
 import org.apache.jena.util.FileManager;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -49,39 +51,32 @@ public class ProjetoOwl {
         OntModel model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MICRO_RULE_INF);
         model.read("file:/home/luizgustavo/NetBeansProjects/ProjetoOwl/src/projetoowl/ontologyRdfTest.owl", "RDF/XML");
 
-        String subject       = "?Data_transformation ";
-        String predicate    = "rdf:type";
-        String object       = "<http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation>";
+        String subject = "?NamedIndividual ";
+        String predicate = "rdf:type";
+        String object = "<http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation>";
+
         //showOntologyComponents(model, "Data_transformation");
-        queryingDataflow(model, subject, predicate, object);
+        queryingDataTransformations(model, subject, predicate, object);
+        //queryingEquivalentTransformations(model);
     }
 
-    private static void queryingDataflow(OntModel model, String subject, String predicate, String object) {
+    private static void queryingEquivalentTransformations(OntModel model) {
+
         String queryString
                 = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "
                 + "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  "
                 + "PREFIX jena: <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#>  "
-                + "PREFIX owl: <https://www.w3.org/2002/07/owl#:>"
-                
-                + "select " + subject
-                + "where { "
-                + subject + predicate + object +" ;"
-               
-                + "} \n ";
+                + "PREFIX owl: <http://www.w3.org/2002/07/owl#>"
+                + "PREFIX xml:<http://www.w3.org/XML/1998/namespace>"
+                + "select ?Data_transformation "
+                + "where { ?Data_transformation jena:same <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_c> }    "
+                + "\n ";
 
         org.apache.jena.query.Query query = QueryFactory.create(queryString);
-        
-        System.out.println("----------------------");
-
-        System.out.println("Subject: "+ subject);
-        System.out.println("Predicate: "+ predicate);
-        System.out.println("Object: "+ object);
 
         System.out.println("----------------------");
 
-        System.out.println("Descendentes diretos e indiretos do modelo");
-
-        System.out.println("-------------------");
+        System.out.println("----------------------");
 
         QueryExecution qe = QueryExecutionFactory.create(query, model);
         ResultSet results = qe.execSelect();
@@ -89,22 +84,59 @@ public class ProjetoOwl {
         // Output query results   
         //showing off the query results about all Data_transformations
         ResultSetFormatter.out(System.out, results, query);
+
+    }
+
+    private static void queryingDataTransformations(OntModel model, String subject, String predicate, String object) {
+        String queryString
+                = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "
+                + "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  "
+                + "PREFIX jena: <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#>  "
+                + "PREFIX owl: <https://www.w3.org/2002/07/owl#:>"
+                + "select " + subject  
+                + "where { "
+                + subject + predicate + object + " ; "
+                + " } "
+                + "ORDER BY DESC(" + subject + ")\n"
+                + "LIMIT 10 \n ";
+
+        org.apache.jena.query.Query query = QueryFactory.create(queryString);
+
+        System.out.println("----------------------");
+        System.out.println("Listing all data transformations");
+        System.out.println("----------------------");
+        System.out.println("Subject: " + subject);
+        System.out.println("Predicate: " + predicate);
+        System.out.println("Object: " + object);
+
+        System.out.println("----------------------");
+
+        QueryExecution qe = QueryExecutionFactory.create(query, model);
+        ResultSet results = qe.execSelect();
         
+        // Output query results   
+        //showing off the query results about all Data_transformations
+        //ResultSetFormatter.out(System.out, results, query);
         ArrayList<String> data_transformations = new ArrayList<>();
-        
+
         //adding results into list
         while (results.hasNext()) {
-            //RDFNode temp = results.next().get(queryString);
-           data_transformations.add(results.next().toString());
+            //taking just the uri and add into java list
+            //the result set store ( ?NamedIndividual = <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_merge> ) into list
+            String temp = results. next().toString();
+            String content = temp.substring(temp.indexOf("= ")+1, temp.indexOf(" )"));
+            data_transformations.add(content);
         }
-       
+        
+        //boolean blnFound = data_transformations.contains("( ?x = <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_merge> )");
+        //System.out.println("Does arrayList contain jena:dt_merge ? " + blnFound);
+
         //Printing the javalist to confirm the process
-        System.out.println("Sparql results stored at java list:");
+        System.out.println("Sparql results - java list:");
         for (int i = 0; i < data_transformations.size(); i++) {
-            System.out.println(data_transformations.get(i));  
+            //System.out.println(data_transformations.get(i).substring(data_transformations.get(i).indexOf("= ")+1, data_transformations.get(i).indexOf(" )")));
+           System.out.println(data_transformations.get(i));         
         }
-        
-        
 
     }
 
@@ -135,4 +167,5 @@ public class ProjetoOwl {
             }
         }
     }
+
 }

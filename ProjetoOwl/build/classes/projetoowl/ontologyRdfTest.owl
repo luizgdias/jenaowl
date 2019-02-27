@@ -29,6 +29,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#same -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#same">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#used -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#used"/>
@@ -483,6 +495,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_c">
         <rdf:type rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation"/>
         <owl:sameAs rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_d"/>
+        <jena:same rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_d"/>
         <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_a1"/>
         <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_b1"/>
         <jena:used rdf:resource="http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#attr_b2"/>
