@@ -10,6 +10,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
 import javax.management.Query;
+import org.apache.http.util.TextUtils;
 import static org.apache.jena.enhanced.BuiltinPersonalities.model;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
@@ -40,6 +41,7 @@ import static org.apache.jena.sparql.engine.http.Service.base;
 import org.apache.jena.util.PrintUtil;
 import org.apache.jena.util.iterator.ExtendedIterator;
 import static org.apache.jena.vocabulary.VOID.properties;
+import sun.invoke.empty.Empty;
 
 /**
  *
@@ -92,7 +94,7 @@ public class ProjetoOwl {
                 = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "
                 + "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  "
                 + "PREFIX jena: <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#>  "
-                + "PREFIX owl: <https://www.w3.org/2002/07/owl#:>"
+                + "PREFIX owl: <https://www.w3.org/2002/07/owl#>"
                 + "select " + subject
                 + "where { "
                 + subject + predicate + object + " ; "
@@ -141,7 +143,7 @@ public class ProjetoOwl {
             System.out.println("------" + j);
             String subject2 = " ?dt_exists ";
             String predicate2 = "jena:same";
-            String object2 = " "+data_transformations.get(j) + " ";
+            String object2 = " " + data_transformations.get(j) + " ";
 
             System.out.println("Subject2 i: " + j + " " + subject2);
             System.out.println("Object j: " + j + " " + object2);
@@ -161,7 +163,50 @@ public class ProjetoOwl {
             org.apache.jena.query.Query query2 = QueryFactory.create(queryString2);
             QueryExecution qe2 = QueryExecutionFactory.create(query2, model);
             ResultSet results2 = qe2.execSelect();
+
+            if (results2.hasNext()) {
+                System.out.println("Possui Transformações Equivalentes");
+
+            } else {
+                System.out.println("Não possui Transformações Equivalentes");
+
+            }
+
             ResultSetFormatter.out(System.out, results2, query2);
+        }
+
+        for (int j = 0; j < data_transformations.size(); j++) {
+
+            System.out.println("------" + j);
+            System.out.println("Elemento: " + data_transformations.get(j));
+            String subject3 = " ?DATASETS ";
+            String predicate3 = "jena:wasGeneratedBy";
+            String object3 = " " + data_transformations.get(j) + " ";
+
+            //System.out.println("Subject3 i: " + j + " " + subject3);
+            //System.out.println("Object j: " + j + " " + object3);
+            String queryString3
+                    = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "
+                    + "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  "
+                    + "PREFIX jena: <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#>  "
+                    + "PREFIX owl: <https://www.w3.org/2002/07/owl#:>"
+                    + "select ?Data_transformation ?DatasetIn ?DatasetOut "
+                    + "where { "
+                    + "?Data_transformation rdf:type <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation> . "
+                    + "?DatasetIn rdf:type <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset> . "
+                    + "?DatasetIn rdf:type <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Input> . "
+                    + "?DatasetOut rdf:type <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset> . "
+                    + "?DatasetOut rdf:type <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Output> . "
+                    + "?DatasetOut jena:wasGeneratedBy ?Data_transformation . "
+                    + "?Data_transformation jena:used ?DatasetIn . "
+
+                    + " } \n";
+
+            org.apache.jena.query.Query query3 = QueryFactory.create(queryString3);
+            QueryExecution qe3 = QueryExecutionFactory.create(query3, model);
+            ResultSet results3 = qe3.execSelect();
+            ResultSetFormatter.out(System.out, results3, query3);
+
         }
     }
 
