@@ -58,7 +58,7 @@ public class ProjetoOwl {
         String object = "<http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation>";
 
         //showOntologyComponents(model, "Data_transformation");
-        queryingDataTransformations(model, subject, predicate, object);
+        queryingDataflows(model, subject, predicate, object);
         //queryingEquivalentTransformations(model);
     }
 
@@ -89,7 +89,7 @@ public class ProjetoOwl {
 
     }
 
-    private static void queryingDataTransformations(OntModel model, String subject, String predicate, String object) {
+    private static void queryingDataflows(OntModel model, String subject, String predicate, String object) {
         String queryString
                 = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "
                 + "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  "
@@ -99,7 +99,7 @@ public class ProjetoOwl {
                 + "where { "
                 + subject + predicate + object + " ; "
                 + " } "
-                + "ORDER BY DESC(" + subject + ")\n"
+                + "ORDER BY ASC(" + subject + ")\n"
                 + "LIMIT 10 \n ";
 
         org.apache.jena.query.Query query = QueryFactory.create(queryString);
@@ -139,75 +139,92 @@ public class ProjetoOwl {
             System.out.println(data_transformations.get(i));
         }
 
+        //Searching equivalent data transformations 
         for (int j = 0; j < data_transformations.size(); j++) {
-            System.out.println("------" + j);
-            String subject2 = " ?dt_exists ";
-            String predicate2 = "jena:same";
-            String object2 = " " + data_transformations.get(j) + " ";
 
-            System.out.println("Subject2 i: " + j + " " + subject2);
-            System.out.println("Object j: " + j + " " + object2);
+            System.out.println("\n------");
+            subject = " ?dt_exists ";
+            predicate = "jena:same";
+            object = " " + data_transformations.get(j) + " ";
+            System.out.println("Object j: " + j + " " + object);
 
             String queryString2
                     = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "
                     + "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  "
                     + "PREFIX jena: <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#>  "
                     + "PREFIX owl: <https://www.w3.org/2002/07/owl#:>"
-                    + "select " + subject2
+                    + "select " + subject
                     + "where { "
-                    + subject2 + predicate2 + object2 + " ; "
+                    + subject + predicate + object + " ; "
                     + " } "
-                    + "ORDER BY DESC(" + subject2 + ")\n"
+                    + "ORDER BY ASC(" + subject + ")\n"
                     + "LIMIT 10 \n ";
 
-            org.apache.jena.query.Query query2 = QueryFactory.create(queryString2);
-            QueryExecution qe2 = QueryExecutionFactory.create(query2, model);
-            ResultSet results2 = qe2.execSelect();
+            query = QueryFactory.create(queryString2);
+            qe = QueryExecutionFactory.create(query, model);
+            results = qe.execSelect();
 
-            if (results2.hasNext()) {
-                System.out.println("Possui Transformações Equivalentes");
+            System.out.println("NUMERO DE LINHA DO RESULT: " + results.getRowNumber());
+
+            //If exists equivalent data transformation, list just one dataflow with the specific data transformation
+            if (results.hasNext()) {
+                System.out.println("Possui Transformação Equivalente.");
+                queryString
+                        = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "
+                        + "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  "
+                        + "PREFIX jena: <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#>  "
+                        + "PREFIX owl: <https://www.w3.org/2002/07/owl#>"
+                        + "select  ?Datasetinput ?Data_transformation ?Datasetoutput "
+                        + "where { "
+                        + "?Data_transformation rdf:type <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation> . "
+                        + "?Datasetinput rdf:type <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Input> . "
+                        + "?Datasetoutput rdf:type <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Output> . "
+                        + "?Datasetinput jena:used ?Data_transformation . "
+                        + "?Datasetoutput jena:wasGeneratedBy ?Data_transformation . "
+                        + "MINUS{ ?Data_transformation jena:same " + data_transformations.get(j) + "}"
+                        + " } Order by ?Data_transformation \n";
+
+                System.out.println("Dataflow:");
+                query = QueryFactory.create(queryString);
+                qe = QueryExecutionFactory.create(query, model);
+                results = qe.execSelect();
+                ResultSetFormatter.out(System.out, results, query);
+                System.out.println("NUMERO DE LINHA DO RESULT: " + results.getRowNumber());
 
             } else {
-                System.out.println("Não possui Transformações Equivalentes");
-
+                System.out.println("Não possui Transformação Equivalente");
             }
 
-            ResultSetFormatter.out(System.out, results2, query2);
         }
 
-        for (int j = 0; j < data_transformations.size(); j++) {
 
-            System.out.println("------" + j);
-            System.out.println("Elemento: " + data_transformations.get(j));
-            String subject3 = " ?DATASETS ";
-            String predicate3 = "jena:wasGeneratedBy";
-            String object3 = " " + data_transformations.get(j) + " ";
+        //for (int j = 0; j < data_transformations.size(); j++) {
+        System.out.println("------");
+        //System.out.println("Elemento: " + data_transformations.get(j));
+        String subject3 = " ?DATASETS ";
+        String predicate3 = "jena:wasGeneratedBy";
+        String object3 = " <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#dt_d> ";
+        System.out.println("Objeto: " + object3);
 
-            //System.out.println("Subject3 i: " + j + " " + subject3);
-            //System.out.println("Object j: " + j + " " + object3);
-            String queryString3
-                    = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "
-                    + "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  "
-                    + "PREFIX jena: <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#>  "
-                    + "PREFIX owl: <https://www.w3.org/2002/07/owl#:>"
-                    + "select ?Data_transformation ?DatasetIn ?DatasetOut "
-                    + "where { "
-                    + "?Data_transformation rdf:type <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation> . "
-                    + "?DatasetIn rdf:type <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset> . "
-                    + "?DatasetIn rdf:type <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Input> . "
-                    + "?DatasetOut rdf:type <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Dataset> . "
-                    + "?DatasetOut rdf:type <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Output> . "
-                    + "?DatasetOut jena:wasGeneratedBy ?Data_transformation . "
-                    + "?Data_transformation jena:used ?DatasetIn . "
+        //System.out.println("Subject3 i: " + j + " " + subject3);
+        //System.out.println("Object j: " + j + " " + object3);
+        String queryString3
+                = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "
+                + "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  "
+                + "PREFIX jena: <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#>  "
+                + "PREFIX owl: <https://www.w3.org/2002/07/owl#>"
+                + "select ?Data_transformation "
+                + "where { "
+                + "?Data_transformation rdf:type <http://www.semanticweb.org/luizgustavo/ontologies/2019/1/jena#Data_transformation> . "
+                + " FILTER ( !EXISTS{  ?Data_transformation jena:wasInformedBy " + object3 + " }) "
+                + " } \n";
 
-                    + " } \n";
+        org.apache.jena.query.Query query3 = QueryFactory.create(queryString3);
+        QueryExecution qe3 = QueryExecutionFactory.create(query3, model);
+        ResultSet results3 = qe3.execSelect();
+        ResultSetFormatter.out(System.out, results3, query3);
 
-            org.apache.jena.query.Query query3 = QueryFactory.create(queryString3);
-            QueryExecution qe3 = QueryExecutionFactory.create(query3, model);
-            ResultSet results3 = qe3.execSelect();
-            ResultSetFormatter.out(System.out, results3, query3);
-
-        }
+        //}
     }
 
     private static void showOntologyComponents(OntModel model, String termo) {
